@@ -7,6 +7,10 @@ export function DesktopProvider({ children }) {
 	const createWindow = (content, position) => {
 
 	}
+	// OR AND
+	const createGlobalWindow = () => {
+
+	}
 
 
   return <desktopContext value={{}}>{children}</desktopContext>
