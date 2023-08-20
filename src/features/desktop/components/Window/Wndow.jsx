@@ -12,6 +12,7 @@ export function Window({
   width,
   height,
   zIndex, // глоб
+  isLocked,
   isCollapsed, // локал (но display: none) - полностью удалять ноду через onClise
   isExpanded,
   onDragStop,
