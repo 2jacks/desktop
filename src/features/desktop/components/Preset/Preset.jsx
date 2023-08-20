@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 import { PresetsService } from '../../services/presests.service'
 
+// А это мб Container или WinLayout, ...
 export function Preset(name) {
   const [windowsData, setWindowsData] = useState(PresetsService.get(name))
 

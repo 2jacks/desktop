@@ -5,6 +5,7 @@ import {Preset} from '../Preset/Preset'
 
 import { PresetsService } from '../../services/presests.service'
 
+// Возможно это Page
 export function Desktop() {
   const desktopCtx = useContext(desktopContext)
 
