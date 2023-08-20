@@ -12,11 +12,12 @@ export function Window({
   width,
   height,
   zIndex, // глоб
-  isCollapsed,
+  isCollapsed, // локал (но display: none) - полностью удалять ноду через onClise
   isExpanded,
   onDragStop,
   onResizeStop,
-  onContainerClick
+  onContainerClick,
+  onClose
 }) {
   const desktopCtx = useContext(desktopContext)
 
@@ -27,7 +28,6 @@ export function Window({
   const _onDragStop = () => {}
   const _onResizeStop = () => {}
   const _onContainerClick = () => {}
-  const _onClose = () => {} // Закрывать изнутри через конктекст, добавлять коллбэк-проп
   const _onExpandButtonClick = () => {}
   const _onCollapseButtonClick = () => {}
 
